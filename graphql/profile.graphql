@@ -1,0 +1,16 @@
+input ProfileInput {
+    firstname: String!
+    lastname: String!
+    avatar: String
+    user: User
+    created_at: DateTime
+    updated_at: DateTime
+}
+
+type  Profile {
+    id: ID!
+    firstname: String!
+    lastname: String!
+    avatar: String
+    user: User! @belongsTo
+}
